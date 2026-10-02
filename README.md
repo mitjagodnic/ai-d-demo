@@ -1,30 +1,28 @@
-# Spletna stran Zavoda AI-D z urednikom
+# Spletna stran Zavoda AI-D
 
-## Zagon urednika
-Dvokliknite **`zazeni.command`** v tej mapi. Odpre se okno Terminala, v brskalniku pa urednik:
-**http://localhost:8800/urednik/**. Urednik deluje, dokler je okno Terminala odprto.
+- **Stran:** https://mitjagodnic.github.io/ai-d-demo/
+- **Urednik:** https://mitjagodnic.github.io/ai-d-demo/urednik/
 
-Javna stran (z delujočimi obrazci) je med tem na http://localhost:8800/
+## Kako deluje
+Vsebine se urejajo v uredniku (Sveltia CMS) na naslovu `/urednik/`. Vsaka shranjena sprememba se zapiše v ta repozitorij na GitHubu. GitHub nato stran v 1–2 minutah sam zgradi in objavi (`.github/workflows/objava.yml`). Enkrat na dan se stran zgradi tudi sama od sebe, da se pretekli dogodki premaknejo.
 
-**Prva prijava:** e-naslov in geslo sta v datoteki `data/prva-prijava.txt`. Po prvi prijavi geslo spremenite v »Moj račun«, datoteko pa izbrišite.
+V uredniku se urejajo novice, dogodki (s programom in prijavami), pretekli dogodki, besedila stalnih strani, pravne strani in nastavitve. Videza in zgradbe strani v uredniku ni mogoče spremeniti.
 
-## Kaj omogoča urednik
-- **Novice:** pisanje, slike, oznake, osnutki, predogled pred objavo, brisanje.
-- **Dogodki:** datum, lokacija, cena, opis, program po dnevih s predavatelji in fotografijami, lokacije za zemljevid in prijavni obrazec (tudi »člani brezplačno«). Izbirate lahko tudi izpostavljen dogodek za domačo stran in trak na vrhu. Ko dogodek mine, se sam premakne med pretekle.
-- **Strani:** besedila domače strani, strani O zavodu, Članstvo in Kontakt, podatki zavoda in pravne strani. Zgradbe in videza ni mogoče spremeniti.
-- **Prejeto:** prijave na dogodke, povpraševanja za članstvo, sporočila in prijave na e-novice z izvozom v Excel (CSV). Na voljo so tudi obvestila po e-pošti (Nastavitve).
-- **Slike:** nalaganje (samodejno pomanjšanje), knjižnica, brisanje neuporabljenih.
-- **Uporabniki:** urednik (objavlja) in skrbnik (dodaja uporabnike, ureja nastavitve).
+## Prijava v urednik (enkrat na brskalnik)
+1. Na GitHubu (račun mitjagodnic) odprite https://github.com/settings/personal-access-tokens/new
+2. **Token name:** Urednik AI-D. **Expiration:** npr. 1 leto.
+3. **Repository access:** Only select repositories → `ai-d-demo`.
+4. **Permissions → Repository permissions → Contents:** Read and write.
+5. Kliknite **Generate token** in ključ kopirajte.
+6. V uredniku kliknite **Sign In Using Access Token** in ključ prilepite. Gumb »Sign In with GitHub« ne deluje, ker zanj ni nastavljenega strežnika.
 
-Po vsakem shranjevanju se javna stran v nekaj sekundah posodobi sama.
+Vsak urednik, ki ima dostop do repozitorija, si ustvari svoj ključ.
 
-## Predogled na spletu
-https://mitjagodnic.github.io/ai-d-demo/ – posodobite ga v uredniku: **Nastavitve → Objavi predogled**.
-Predogled je skrit pred Googlom. Na njem obrazci odprejo e-pošto, ker tam ni urednika.
+## Obrazci
+Brez dodatnih nastavitev obrazci na strani odprejo e-poštni program obiskovalca s pripravljenim sporočilom. Če v uredniku pod **Nastavitve** vpišete brezplačen ključ s strani web3forms.com, prijave in sporočila prihajajo neposredno na e-pošto.
 
-## Za tehnično pomoč: namestitev na strežnik
-- Potrebuje Python 3.9+: `pip install -r requirements.txt`, nato zagon z `AID_HOST=0.0.0.0 AID_PORT=8800 python -m admin`.
-- Za spletnim strežnikom (nginx ali Caddy) z HTTPS nastavite še `AID_HTTPS=1` (varni piškotki) in `AID_PROXY=1`.
-- Uporabnika dodate na strežniku z ukazom `python -m admin.uporabnik`.
-- Vsebine so v `content/` (JSON), slike v `static/media/`. Prijave, uporabniki in nastavitve so v `data/`, zato to mapo redno varnostno kopirajte.
-- Javno stran zgradi `tools/build.py` v mapo `site/`. Če stran gostuje drugje, nastavite `form_endpoint` v `config.json` na `https://<strežnik>/api/obrazec`.
+## Za tehnično pomoč
+- Vsebine so v `content/` (JSON, besedila v Markdownu), slike v `static/media/`, pomanjšane kopije slik pa v `static/kartice/`.
+- Stran zgradi `tools/build.py` (Python 3.9+, `pip install -r requirements.txt`) v mapo `site/`. Za objavo pod podmapo dodajte `AID_DEMO_BASE=/ai-d-demo/`.
+- Nastavitve urednika so v `src/cms/config.yml`.
+- Za objavo na ai-d.si: zgradite brez `AID_DEMO_BASE` in naložite mapo `site/` na koren domene. V `src/cms/config.yml` posodobite `site_url`.
