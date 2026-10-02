@@ -1,0 +1,319 @@
+# Urednik spletne strani Zavoda AI-D (Sveltia CMS).
+# Vsaka shranjena sprememba se zapiše v GitHub, stran pa se v 1–2 minutah zgradi in objavi sama.
+backend:
+  name: github
+  repo: mitjagodnic/ai-d-demo
+  branch: main
+  commit_messages:
+    create: "Nova vsebina: {{collection}} »{{slug}}«"
+    update: "Posodobitev: {{collection}} »{{slug}}«"
+    delete: "Izbris: {{collection}} »{{slug}}«"
+    uploadMedia: "Nova slika: {{path}}"
+    deleteMedia: "Izbris slike: {{path}}"
+
+site_url: https://mitjagodnic.github.io/ai-d-demo
+display_url: https://mitjagodnic.github.io/ai-d-demo
+logo_url: https://mitjagodnic.github.io/ai-d-demo/assets/favicon.svg
+
+media_folder: static/media
+public_folder: /media
+media_libraries:
+  default:
+    config:
+      max_file_size: 15000000
+      slugify_filename: true
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 2000
+          height: 2000
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  # ------------------------------------------------------------ NOVICE
+  - name: novice
+    label: Novice
+    label_singular: novico
+    description: Novice in članki. Nova novica se objavi na vrhu seznama novic.
+    folder: content/novice
+    format: json
+    create: true
+    delete: true
+    slug: "{{title}}"
+    identifier_field: title
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    preview_path: "{{slug}}/"
+    thumbnail: image
+    fields:
+      - { name: title, label: Naslov, widget: string }
+      - { name: date, label: Datum objave, widget: datetime, format: "YYYY-MM-DDTHH:mm", default: "{{now}}" }
+      - { name: draft, label: Osnutek (ni prikazano na strani), widget: boolean, default: false, required: false }
+      - { name: image, label: Naslovna slika, widget: image, required: false, choose_url: false }
+      - name: excerpt
+        label: Povzetek
+        widget: text
+        required: false
+        hint: Ena ali dve povedi. Izpiše se na karticah novic in pri deljenju na družbenih omrežjih. Če je prazno, se uporabi začetek besedila.
+      - name: body
+        label: Besedilo
+        widget: richtext
+        buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+        editor_components: [image]
+      - name: tags
+        label: Oznake
+        widget: list
+        required: false
+        hint: Ena oznaka na vrstico, npr. AI, Slovenija.
+
+  # ------------------------------------------------------------ DOGODKI
+  - name: dogodki
+    label: Dogodki
+    label_singular: dogodek
+    description: Prihajajoči dogodki s programom in prijavo. Po koncu dogodka se dogodek sam premakne med pretekle.
+    folder: content/dogodki
+    format: json
+    create: true
+    delete: true
+    slug: "{{title}}"
+    identifier_field: title
+    summary: "{{title}} – {{start | date('D. M. YYYY')}}"
+    sortable_fields: [start, title]
+    preview_path: "dogodek/{{slug}}/"
+    thumbnail: image
+    fields:
+      - { name: title, label: Naslov, widget: string }
+      - { name: eyebrow, label: Oznaka nad naslovom, widget: string, default: Dogodek, required: false, hint: "npr. Dogodek, Delavnica, Konferenca" }
+      - { name: start, label: Začetek, widget: datetime, format: "YYYY-MM-DDTHH:mm" }
+      - { name: end, label: Konec, widget: datetime, format: "YYYY-MM-DDTHH:mm", required: false, hint: Pri enodnevnem dogodku vpišite uro konca istega dne. }
+      - { name: location, label: Lokacija, widget: string, required: false, hint: "npr. Center Rog, Ljubljana" }
+      - { name: price, label: Cena, widget: string, required: false, hint: "npr. 499 € + DDV ali Člani Zavoda AI-D: brezplačno; ostali: 120 € + DDV" }
+      - { name: lead, label: Kratek uvod, widget: text, required: false, hint: Ena poved pod naslovom na vrhu strani dogodka. }
+      - { name: image, label: Naslovna slika, widget: image, choose_url: false }
+      - name: body
+        label: Opis dogodka
+        widget: richtext
+        required: false
+        buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+        editor_components: [image]
+      - name: themes_title
+        label: Tematski sklopi – naslov
+        widget: string
+        required: false
+        hint: Neobvezno. Npr. »Think. Build. Experience.«
+      - name: themes
+        label: Tematski sklopi
+        label_singular: sklop
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.title}}"
+        fields:
+          - { name: title, label: Naslov, widget: string }
+          - { name: text, label: Opis, widget: text, required: false }
+      - { name: themes_note, label: Opomba pod sklopi, widget: string, required: false }
+      - name: program
+        label: Program
+        label_singular: dan
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        hint: Neobvezno. Program se na strani prikaže po dnevih; ob kliku na predavatelja se odpre njegov opis.
+        fields:
+          - { name: label, label: Ime dneva, widget: string, hint: "npr. DAN 1: THINK" }
+          - { name: description, label: Kratek opis dneva, widget: string, required: false }
+          - name: items
+            label: Točke programa
+            label_singular: točko
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.time}} {{fields.title}}"
+            fields:
+              - { name: time, label: Ura, widget: string, required: false, hint: "npr. 09.30" }
+              - { name: title, label: Predavatelj ali naslov točke, widget: string }
+              - { name: subtitle, label: "Podnaslov (vloga, organizacija ali tema)", widget: string, required: false }
+              - { name: image, label: Fotografija, widget: image, required: false, choose_url: false }
+              - { name: description, label: Opis (odpre se ob kliku), widget: richtext, required: false, minimal: true, buttons: [bold, italic, link, bulleted-list], editor_components: [] }
+          - name: locations
+            label: Lokacije tega dne (za zemljevid)
+            label_singular: lokacijo
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Ime lokacije, widget: string }
+              - { name: address, label: Naslov, widget: string }
+      - name: registration
+        label: Prijave
+        widget: object
+        collapsed: false
+        fields:
+          - { name: open, label: Na strani prikaži obrazec za prijavo, widget: boolean, default: true }
+          - { name: title, label: Naslov obrazca, widget: string, default: Prijava na dogodek, required: false }
+          - { name: intro, label: Besedilo nad obrazcem, widget: string, default: "Izpolnite obrazec. Potrdilo o prijavi boste prejeli po e-pošti.", required: false }
+          - { name: members_free, label: "Člani zavoda brezplačno (obrazec ima stikalo »Sem član«)", widget: boolean, default: false, required: false }
+          - { name: nonmember_price, label: Cena za nečlane, widget: string, required: false, hint: "npr. 120 € + DDV" }
+      - { name: draft, label: Osnutek (ni prikazano na strani), widget: boolean, default: false, required: false }
+
+  # ------------------------------------------------------------ PRETEKLI DOGODKI (ARHIV)
+  - name: arhiv
+    label: Pretekli dogodki (arhiv)
+    label_singular: pretekli dogodek
+    description: Zapisi o starejših dogodkih z besedilom in fotografijami.
+    folder: content/arhiv
+    format: json
+    create: true
+    delete: true
+    slug: "{{title}}"
+    identifier_field: title
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    preview_path: "dogodki/{{slug}}/"
+    thumbnail: image
+    fields:
+      - { name: title, label: Naslov, widget: string }
+      - { name: date, label: Datum dogodka, widget: datetime, format: "YYYY-MM-DD", time_format: false }
+      - { name: image, label: Naslovna slika, widget: image, required: false, choose_url: false }
+      - name: body
+        label: Besedilo
+        widget: richtext
+        buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
+        editor_components: [image]
+      - { name: draft, label: Skrito (ni prikazano na strani), widget: boolean, default: false, required: false }
+
+  # ------------------------------------------------------------ STRANI (stalna zgradba, urejajo se besedila)
+  - name: strani
+    label: Strani
+    description: Besedila na stalnih straneh. Zgradba in videz strani se ne spreminjata.
+    files:
+      - name: domov
+        label: Domača stran
+        file: content/strani/domov.json
+        preview_path: ""
+        fields:
+          - { name: naslov_1, label: Naslov – prva vrstica, widget: string }
+          - { name: naslov_2, label: Naslov – druga vrstica, widget: string, hint: Na strani je izpisana poševno in oranžno. }
+          - { name: slogan, label: Slogan pod naslovom, widget: string }
+          - { name: uvod, label: Besedilo »Kdo smo«, widget: text }
+          - name: stebri
+            label: Trije stebri
+            label_singular: steber
+            widget: list
+            allow_add: false
+            allow_remove: false
+            min: 3
+            max: 3
+            summary: "{{fields.naslov}}"
+            fields:
+              - { name: naslov, label: Naslov, widget: string }
+              - { name: besedilo, label: Besedilo, widget: text }
+          - { name: cta_naslov, label: Poziv k članstvu – naslov, widget: string }
+          - { name: cta_poudarek, label: Poziv k članstvu – poudarjeni del naslova, widget: string, hint: Izpisan poševno, nadaljuje naslov. }
+          - { name: cta_besedilo, label: Poziv k članstvu – besedilo, widget: text }
+      - name: o-zavodu
+        label: O zavodu
+        file: content/strani/o-zavodu.json
+        preview_path: "o-zavodu/"
+        fields:
+          - { name: uvod, label: Uvodno besedilo, widget: text }
+          - { name: cilji_naslov, label: Naslov seznama ciljev, widget: string }
+          - { name: cilji, label: Glavni cilji, label_singular: cilj, widget: list, field: { name: cilj, label: Cilj, widget: text } }
+          - { name: delovanje, label: Delovanje, widget: text }
+          - { name: delovanje_podrocja, label: Področja tematskih delovnih skupin, label_singular: področje, widget: list, field: { name: podrocje, label: Področje, widget: string } }
+          - { name: vizija, label: Vizija, widget: text }
+          - { name: poslanstvo, label: Poslanstvo, widget: text }
+          - { name: svet_opis, label: Strokovni svet – opis, widget: text }
+          - { name: svet_clani, label: Člani strokovnega sveta, label_singular: člana, widget: list, field: { name: ime, label: Ime in priimek, widget: string } }
+          - { name: citat, label: Citat, widget: text, required: false, hint: Brez narekovajev – dodajo se samodejno. }
+          - { name: citat_avtor, label: Avtor citata, widget: string, required: false }
+          - { name: citat_vloga, label: Vloga avtorja citata, widget: string, required: false }
+          - { name: statut, label: Statut zavoda, widget: text }
+          - name: organi
+            label: Organi zavoda
+            label_singular: organ
+            widget: list
+            summary: "{{fields.naziv}}"
+            fields:
+              - { name: naziv, label: Naziv, widget: string }
+              - { name: opis, label: Opis, widget: text }
+      - name: clanstvo
+        label: Članstvo
+        file: content/strani/clanstvo.json
+        preview_path: "clanstvo/"
+        fields:
+          - { name: uvod_poudarek, label: Uvod – poudarjeni stavek, widget: string }
+          - { name: uvod, label: Uvod – nadaljevanje, widget: text }
+          - { name: uvod_2, label: Drugi odstavek, widget: text }
+          - name: paketi
+            label: Paketi članstva
+            label_singular: paket
+            widget: list
+            allow_add: false
+            allow_remove: false
+            min: 3
+            max: 3
+            summary: "{{fields.naziv}} – {{fields.cena}} €"
+            fields:
+              - { name: naziv, label: Naziv paketa, widget: string }
+              - { name: cena, label: Cena v evrih, widget: string, hint: "Samo število, npr. 1.300" }
+          - { name: ugodnosti_naslov, label: Naslov seznama ugodnosti, widget: string }
+          - { name: ugodnosti, label: Ugodnosti za člane, label_singular: ugodnost, widget: list, field: { name: ugodnost, label: Ugodnost, widget: text }, hint: Isti seznam je izpisan tudi na strani O zavodu. }
+      - name: kontakt
+        label: Kontakt
+        file: content/strani/kontakt.json
+        preview_path: "kontakt/"
+        fields:
+          - { name: uvod, label: Uvodno besedilo, widget: text }
+      - name: podatki
+        label: Podatki zavoda
+        file: content/strani/podatki.json
+        preview_path: "kontakt/"
+        fields:
+          - { name: ime, label: Ime, widget: string }
+          - { name: polno_ime, label: Polno ime (v nogi strani), widget: string }
+          - { name: naslov, label: Sedež, widget: string }
+          - { name: email, label: E-naslov, widget: string }
+          - { name: maticna, label: Matična številka, widget: string }
+          - { name: davcna, label: Davčna številka, widget: string }
+          - { name: trr, label: Transakcijski račun, widget: string }
+
+  # ------------------------------------------------------------ PRAVNE STRANI
+  - name: pravno
+    label: Pravne strani
+    files:
+      - { name: politika-zasebnosti, label: Politika zasebnosti, file: content/pravno/politika-zasebnosti.json, preview_path: "politika-zasebnosti/", fields: [{ name: title, label: Naslov, widget: string }, { name: body, label: Besedilo, widget: richtext, editor_components: [] }] }
+      - { name: pravilnik-o-piskotkih, label: Pravilnik o piškotkih, file: content/pravno/pravilnik-o-piskotkih.json, preview_path: "pravilnik-o-piskotkih/", fields: [{ name: title, label: Naslov, widget: string }, { name: body, label: Besedilo, widget: richtext, editor_components: [] }] }
+      - { name: splosni-pogoji-clanstva, label: Splošni pogoji članstva, file: content/pravno/splosni-pogoji-clanstva.json, preview_path: "splosni-pogoji-clanstva/", fields: [{ name: title, label: Naslov, widget: string }, { name: body, label: Besedilo, widget: richtext, editor_components: [] }] }
+      - { name: izjava-o-skladnosti, label: Izjava o skladnosti, file: content/pravno/izjava-o-skladnosti.json, preview_path: "izjava-o-skladnosti/", fields: [{ name: title, label: Naslov, widget: string }, { name: body, label: Besedilo, widget: richtext, editor_components: [] }] }
+
+  # ------------------------------------------------------------ NASTAVITVE
+  - name: nastavitve
+    label: Nastavitve
+    files:
+      - name: nastavitve
+        label: Izpostavljen dogodek in obrazci
+        file: content/nastavitve.json
+        fields:
+          - name: featured_event
+            label: Izpostavljen dogodek
+            widget: relation
+            collection: dogodki
+            value_field: "{{slug}}"
+            search_fields: [title]
+            display_fields: [title]
+            required: false
+            hint: Prikazan v velikem temnem pasu z odštevanjem na domači strani.
+          - { name: show_banner, label: Prikaži trak z izpostavljenim dogodkom na vrhu vseh strani, widget: boolean, default: true }
+          - name: web3forms_key
+            label: Ključ Web3Forms za obrazce
+            widget: string
+            required: false
+            hint: Neobvezno. S ključem s strani web3forms.com prihajajo prijave in sporočila s strani neposredno na e-pošto. Brez ključa obrazec odpre e-poštni program obiskovalca.

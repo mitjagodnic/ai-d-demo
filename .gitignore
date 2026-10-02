@@ -1,0 +1,12 @@
+.venv/
+site/
+site.novo/
+site.staro/
+_site/
+.predogled*/
+deploy/
+_arhiv/
+data/
+__pycache__/
+*.pyc
+.DS_Store

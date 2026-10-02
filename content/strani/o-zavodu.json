@@ -1,0 +1,54 @@
+{
+  "uvod": "Zavod AI-D, Zavod za razvoj umetne inteligence, je panožno združenje, ki se osredotoča na promocijo, povezovanje in podporo razvoju umetne inteligence v Sloveniji. Ustanovljen je bil kot odgovor na hitro rastočo vlogo umetne inteligence v globalni družbi in gospodarstvu. AI-D združuje strokovnjake, podjetja, raziskovalne ustanove ter vse, ki jih zanima odgovoren in napreden razvoj AI-tehnologij.",
+  "cilji_naslov": "Glavni cilji Zavoda AI-D so:",
+  "cilji": [
+    "spodbujanje razvoja in uporabe umetne inteligence v slovenskem prostoru,",
+    "širjenje znanja, izobraževanje in deljenje dobrih praks,",
+    "oblikovanje smernic in etičnih standardov za uporabo umetne inteligence,",
+    "izvajanje raziskav in analiz o vplivu AI na družbo, gospodarstvo in delovna mesta,",
+    "povezovanje deležnikov za hitrejši razvoj inovacij in novih AI rešitev."
+  ],
+  "delovanje": "Zavod AI-D deluje kot svetovalno-izobraževalni center, sestavljen iz Strokovnega sveta, Raziskovalno-razvojnega odbora in tematskih delovnih skupin, ki se ukvarjajo z zakonodajo in regulativo, etiko umetne inteligence, AI v izobraževanju, zdravstvu, gospodarstvu ter digitalni vključenosti.",
+  "delovanje_podrocja": [
+    "zakonodaja in regulativa",
+    "etika umetne inteligence",
+    "AI v izobraževanju",
+    "zdravstvo",
+    "gospodarstvo",
+    "digitalna vključenost"
+  ],
+  "vizija": "Zavod AI-D si prizadeva za razvoj umetne inteligence, ki je varen, etičen in človeku prijazen. Naša vizija je Slovenijo postaviti v ospredje inovacijskega dogajanja na področju umetne inteligence v Evropi, s poudarkom na odgovorni rabi tehnologije, trajnostnem razvoju in digitalni vključenosti vseh generacij.",
+  "poslanstvo": "Naše poslanstvo je povezovati strokovnjake, podjetja, raziskovalne ustanove in širšo javnost za skupno ustvarjanje naprednega, a odgovornega ekosistema umetne inteligence. Z izobraževanjem, raziskavami, oblikovanjem smernic in spodbujanjem dobrih praks gradimo temelje za premišljen razvoj umetne inteligence, ki podpira gospodarsko rast, krepi družbeno odpornost in ohranja človekove pravice.",
+  "svet_opis": "Strokovni svet Zavoda AI-D je osrednji organ, ki usmerja strokovno in vsebinsko delovanje zavoda. Sestavljajo ga vodilni slovenski strokovnjaki s področja umetne inteligence, prava, etike, gospodarstva in znanosti. Njegova glavna naloga je svetovati pri oblikovanju razvojnih smernic, etičnih standardov in pri pripravi ključnih projektov ter analiz. Strokovni svet tako zagotavlja, da aktivnosti zavoda temeljijo na najvišjih strokovnih, etičnih in družbenih standardih.",
+  "svet_clani": [
+    "Klemen Selakovič",
+    "Luka Tišler",
+    "Vladimir Nardin",
+    "Igor Pauletič",
+    "Mitja Trampuž",
+    "Marko Grobelnik",
+    "Andrej P. Skraba",
+    "Daniel Fazlić",
+    "Anita Srac",
+    "Tadej Ostrc",
+    "Peter Mesarec"
+  ],
+  "citat": "Umetna inteligenca ni več prihodnost, ampak sedanjost, ki korenito spreminja naš svet. Slovenija ima izjemen potencial, da postane pomemben akter na tem področju, vendar moramo delovati usklajeno in strateško. Zavod AI-D bo ključna platforma za povezovanje talentov, spodbujanje inovacij in zagotavljanje, da bo Slovenija izkoristila vse prednosti, ki jih umetna inteligenca ponuja.",
+  "citat_avtor": "Klemen Selakovič",
+  "citat_vloga": "priznani strokovnjak za umetno inteligenco",
+  "statut": "Statut Zavoda AI-D opredeljuje njegovo poslanstvo, dejavnosti, organizacijo in način delovanja. Določa pravice in dolžnosti članov, sestavo in pristojnosti organov zavoda (Strokovni svet, Raziskovalno-razvojni odbor, tematske delovne skupine), pravila sprejemanja odločitev ter vire financiranja. Statut temelji na vrednotah odgovornega razvoja umetne inteligence, etike, sodelovanja in inovativnosti.",
+  "organi": [
+    {
+      "naziv": "Ustanovitelje",
+      "opis": "ključne osebe, ki so zasnovale idejo zavoda in postavile njegove temelje,"
+    },
+    {
+      "naziv": "Strokovni svet",
+      "opis": "skupina priznanih strokovnjakov iz področij umetne inteligence, prava, etike, gospodarstva in raziskav, ki svetujejo pri vsebinskem razvoju in etičnih vprašanjih,"
+    },
+    {
+      "naziv": "Tematske delovne skupine",
+      "opis": "specializirane ekipe za zakonodajo, izobraževanje, zdravstvo, gospodarstvo, etiko in digitalno vključenost."
+    }
+  ]
+}

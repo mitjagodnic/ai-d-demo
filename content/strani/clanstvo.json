@@ -1,0 +1,27 @@
+{
+  "uvod_poudarek": "Članstvo v Zavodu AI-D prinaša številne prednosti.",
+  "uvod": "Člani med prvimi dostopajo do najnovejših trendov, znanj in raziskav na področju umetne inteligence. Sodelujejo lahko z vodilnimi strokovnjaki in mnenjskimi voditelji AI industrije ter aktivno prispevajo k razpravam o etičnih smernicah, tehnoloških standardih in najboljših praksah uporabe umetne inteligence.",
+  "uvod_2": "AI-D pomembno prispeva tudi k povezovanju skupnosti – omogoča mreženje med AI navdušenci, raziskovalci in podjetji ter spodbuja sodelovanja, ki vodijo do inovativnih rešitev in novih poslovnih priložnosti.",
+  "paketi": [
+    {
+      "naziv": "Fizična oseba",
+      "cena": "700"
+    },
+    {
+      "naziv": "Podjetja pod 10 zaposlenih",
+      "cena": "1.300"
+    },
+    {
+      "naziv": "Podjetja nad 10 zaposlenih",
+      "cena": "2.100"
+    }
+  ],
+  "ugodnosti_naslov": "Svojim članom Zavod AI-D omogoča:",
+  "ugodnosti": [
+    "dostop do aktualnih trendov, raziskav in izobraževanj na področju AI (npr. AI Landscape Slovenija, AI Impact poročilo),",
+    "sodelovanje z mnenjskimi voditelji in raziskovalci,",
+    "povezovanje s slovenskimi in mednarodnimi partnerji,",
+    "izmenjavo znanj, deljenje dobrih praks in vključevanje v AI projekte,",
+    "dostop do strokovnih programov usposabljanja in certificiranja kompetenc na področju umetne inteligence."
+  ]
+}

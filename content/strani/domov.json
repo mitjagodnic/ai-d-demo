@@ -1,0 +1,23 @@
+{
+  "naslov_1": "Zavod za razvoj",
+  "naslov_2": "umetne inteligence",
+  "slogan": "Za prihodnost, kjer ima tehnologija človeški obraz.",
+  "uvod": "Zavod AI-D je neodvisna organizacija, ki združuje strokovnjake, raziskovalce, podjetnike in vizionarje s skupnim ciljem – spodbujati odgovoren, vključujoč in trajnostno naravnan razvoj umetne inteligence v Sloveniji in širši regiji.",
+  "stebri": [
+    {
+      "naslov": "Vizija",
+      "besedilo": "Spodbujati prenos znanja in uporabo umetne inteligence v gospodarstvu, javnem sektorju in družbi, ob upoštevanju etičnih standardov, človekovih pravic in trajnostnega razvoja."
+    },
+    {
+      "naslov": "Cilji",
+      "besedilo": "Naši cilji so spodbujati raziskave, prenos znanja v prakso ter razvijati izobraževanje in kadre za prihodnost. Zavzemamo se za etično uporabo umetne inteligence in gradimo močne povezave doma in po svetu."
+    },
+    {
+      "naslov": "Aktivnosti",
+      "besedilo": "Zavod AI-D je raziskovalni inkubator za prebojne AI rešitve, organizira izobraževalne programe, podpira podjetja pri uvajanju umetne inteligence, spremlja etično uporabo tehnologije in organizira mednarodne AI konference za povezovanje znanja, prakse in vizij."
+    }
+  ],
+  "cta_naslov": "Članstvo v Zavodu AI-D prinaša",
+  "cta_poudarek": "številne prednosti.",
+  "cta_besedilo": "Člani med prvimi dostopajo do najnovejših trendov, znanj in raziskav na področju umetne inteligence."
+}
