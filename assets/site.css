@@ -401,12 +401,8 @@ body:has(.announce:not(.is-hidden)) .hero { min-height: max(640px, calc(100svh -
 .pillar__title { font-size: clamp(32px, 3vw, 44px); letter-spacing: -.04em; font-weight: 500; line-height: 1; padding-top: 48px; }
 .pillar p { color: var(--ink-2); font-size: 16.5px; line-height: 1.6; }
 
-/* ---------------------------------------------------------------- band */
-.band__media { position: relative; border-radius: var(--radius-lg); overflow: hidden; background: #0c0b0a; aspect-ratio: 1024 / 427; }
-.band__media img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.07) translateY(var(--py, 0px)); will-change: transform; }
-
 /* ---------------------------------------------------------------- AI WEEK band */
-.aiweek { position: relative; overflow: hidden; margin-top: var(--section); padding-block: var(--section); isolation: isolate; }
+.aiweek { position: relative; overflow: hidden; padding-block: var(--section); isolation: isolate; }
 .aiweek__glow { position: absolute; z-index: -1; left: 50%; top: 50%; transform: translate(-80%, -50%); opacity: .55; pointer-events: none; }
 .aiweek__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(40px, 6vw, 96px); align-items: center; }
 .aiweek__title { font-size: clamp(64px, 11vw, 190px); line-height: .85; letter-spacing: -.06em; font-weight: 600; margin: 24px 0 28px; }
