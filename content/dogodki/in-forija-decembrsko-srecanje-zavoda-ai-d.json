@@ -1,0 +1,23 @@
+{
+  "title": "IN-forija: decembrsko srečanje Zavoda AI-D",
+  "eyebrow": "Dogodek",
+  "start": "2026-12-09T14:00",
+  "end": "2026-12-09T19:00",
+  "location": "Ljubljana",
+  "price": "brezplačno",
+  "lead": "Večer za člane Zavoda AI-D, člane strokovnega sveta in ustanovne člane.",
+  "image": "/media/in-forija_-an-elegant-golden-gathering.webp",
+  "body": "Ob pogovorih, novih načrtih, mreženju in penini bomo proslavili skupnost, ki jo gradimo skupaj ... ter nazdravili vsemu, kar prihaja.",
+  "themes_title": "",
+  "themes": [],
+  "themes_note": "",
+  "program": [],
+  "registration": {
+    "open": true,
+    "title": "Prijava na dogodek",
+    "intro": "Izpolnite obrazec. Potrdilo o prijavi boste prejeli po e-pošti.",
+    "members_free": true,
+    "nonmember_price": ""
+  },
+  "draft": false
+}
