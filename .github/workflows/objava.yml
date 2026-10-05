@@ -1,5 +1,5 @@
 # Zgradi spletno stran iz vsebin v content/ in jo objavi na GitHub Pages.
-# Teče ob vsaki spremembi (tudi ko urednik shrani vsebino) in vsako jutro, da se pretekli dogodki premaknejo sami.
+# Teče ob vsaki spremembi (tudi ko urednik shrani vsebino) in vsako noč: končane dogodke premakne med pretekle.
 name: Objava strani
 
 on:
@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -28,6 +28,16 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
+      - name: Pretekle dogodke premakni med pretekle
+        run: |
+          python tools/premakni_pretekle.py
+          if [ -n "$(git status --porcelain content)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A content
+            git commit -m "Pretekli dogodki premaknjeni med pretekle"
+            git pull --rebase origin main && git push origin HEAD:main || echo "Premika ni bilo mogoče shraniti, poskusim ob naslednji gradnji."
+          fi
       - name: Gradnja strani
         run: python tools/build.py
         env:
