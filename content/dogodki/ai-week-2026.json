@@ -4,41 +4,55 @@
   "start": "2026-11-03T09:30",
   "end": "2026-11-05T22:00",
   "location": "Center Rog, Ljubljana",
-  "price": "499 € + DDV",
+  "price": "500 € + DDV",
   "lead": "Zavod AI-D novembra organizira 3-dnevno konferenco AI WEEK, ki bo potekala v okviru EU AI Innovation Month.",
   "image": "/media/2026/09/aid-import-6108.jpg",
-  "body": "![](/media/2026/09/viber_image_2026-09-28_11-35-39-052.jpg)\n\nPrvi **AI WEEK** v Sloveniji bo **od 3. do 5. novembra 2026** povezal strokovnjake, podjetja in radovedne obiskovalce. Dogajanje bo **iz Centra Rog seglo po vsej Ljubljani,** zadnji dan pa bo na najmanj štirih lokacijah brezplačno odprto javnosti. AI WEEK je edini slovenski dogodek, **vključen v evropsko pobudo European AI Innovation Month**.\n\nKaj lahko umetna inteligenca naredi za nas: pri delu, načrtovanju, nakupovanju, ustvarjanju ali urejanju vsakdanjih opravkov? Kdaj ji lahko zaupamo in kdaj je pametneje, da odločitev ostane naša? Novembra bomo lahko odgovore v Ljubljani tudi preizkusili. **Prvi slovenski AI WEEK, ki ga organizira Zavod AI-D, prinaša tri dni predavanj, delavnic, okroglih miz, dialogov in praktičnih izkušenj z umetno inteligenco.**\n",
+  "body": "![](/media/2026/09/viber_image_2026-09-28_11-35-39-052.jpg)\n\nPrvi **AI WEEK** v Sloveniji bo **od 3. do 5. novembra 2026** povezal strokovnjake, podjetja in radovedne obiskovalce. Dogajanje bo **iz Centra Rog seglo po vsej Ljubljani,** zadnji dan pa bo na najmanj štirih lokacijah brezplačno odprto javnosti. AI WEEK je edini slovenski dogodek, **vključen v evropsko pobudo European AI Innovation Month**.\n\nKaj lahko umetna inteligenca naredi za nas: pri delu, načrtovanju, nakupovanju, ustvarjanju ali urejanju vsakdanjih opravkov? Kdaj ji lahko zaupamo in kdaj je pametneje, da odločitev ostane naša? Novembra bomo lahko odgovore v Ljubljani tudi preizkusili. **Prvi slovenski AI WEEK, ki ga organizira Zavod AI-D, prinaša tri dni predavanj, delavnic, okroglih miz, dialogov in praktičnih izkušenj z umetno inteligenco.**",
+  "themes_title": "Think. Build. Experience.",
+  "themes": [
+    {
+      "title": "DAY 1: THINK",
+      "text": "Vizija, Strategija, regulativa, politika, država, prihodnost, raziskave, univerze, etika, zakonodaja, javni sektor, evropske smernice, digitalizacija."
+    },
+    {
+      "title": "DAY 2: BUILD",
+      "text": "Business, start-up, podjetja, produkti, rast, ROI, avtomatizacija, startupi, investicije, marketing, prodaja, HR, IT, produktivnost, inovacije, implementacija."
+    },
+    {
+      "title": "DAY 3: EXPERIENCE",
+      "text": "Demo, showcase, open house, laboratoriji, podjetja, izkušnje, networking, obisk lokacij, AI na terenu, ekskurzijA, delavnice, prototipi."
+    },
+    {
+      "title": "NIGHT 3: CELEBRATION",
+      "text": "Podelitev nagrad, predstavitev novega strokovnega sveta, zaključni govor, AI skupnost, povezovanje, slavnostni večer, glasba, praznovanje."
+    }
+  ],
+  "themes_note": "*Tretji dan konference je brezplačen.",
   "program": [
     {
       "label": "DAN 1: THINK",
       "description": "Družba, regulativa, raziskovanje in javni sektor.",
-      "locations": [
-        {
-          "name": "Center Rog",
-          "address": "Trubarjeva cesta 72, 1000 Ljubljana"
-        }
-      ],
       "items": [
         {
           "time": "09.30",
           "title": "dr. Jerneja Jug Jerše",
           "subtitle": "vodja Predstavništva Evropske komisije v Sloveniji",
           "image": "/media/2026/09/URADNA-FOTOGRAFIJA-1024x682.jpg",
-          "description": "V uvodu konference bo povezala evropsko vizijo s priložnostmi za Slovenijo; postavila slovenske AI zgodbe v mednarodni kontekst, podjetjem pa odprla pogled onkraj domačega trga.\n"
+          "description": "V uvodu konference bo povezala evropsko vizijo s priložnostmi za Slovenijo; postavila slovenske AI zgodbe v mednarodni kontekst, podjetjem pa odprla pogled onkraj domačega trga."
         },
         {
           "time": "09.45",
           "title": "Prof. dr. Verica Trstenjak",
           "subtitle": "Evropsko pravo in umetna inteligenca",
           "image": "/media/2026/09/verica-1024x718.jpg",
-          "description": "Prof. dr. Verica Trstenjak je bivša sodnica na Splošnem sodišču EU, ter bivša generalna pravobranilka Sodišča EU v Luksemburgu. Je profesorica prava Evropske unije (na Dunaju in v Ljubljani).Od leta 2019 je konsiliatorka Sodišča za spravo in arbitražo OVSE. Leta 2024 jo je Evropska centralna banka v Frankfurtu imenovala v najvišji nadzorni organ (Upravni odbor za pregled). Objavila je vec knjig o evropskem pravu ter vec kot 300 clankov, predava na univerzah in konferencah po celem svetu. Je v vodstvih vec evropskih zdruzenj pravnikov, npr. za evropsko pravo (FIDE) in EWLA. Je clanica mednarodne akademije znanosti: Academia Europaea (Akademija Evrope) in podpredsednica Evropske akademije znanosti in umetnosti. Leta 2020 je prejela avstrijsko državno odlikovanje: Častni križ za znanost in umetnost prvega razreda.\n"
+          "description": "Prof. dr. Verica Trstenjak je bivša sodnica na Splošnem sodišču EU, ter bivša generalna pravobranilka Sodišča EU v Luksemburgu. Je profesorica prava Evropske unije (na Dunaju in v Ljubljani).Od leta 2019 je konsiliatorka Sodišča za spravo in arbitražo OVSE. Leta 2024 jo je Evropska centralna banka v Frankfurtu imenovala v najvišji nadzorni organ (Upravni odbor za pregled). Objavila je vec knjig o evropskem pravu ter vec kot 300 clankov, predava na univerzah in konferencah po celem svetu. Je v vodstvih vec evropskih zdruzenj pravnikov, npr. za evropsko pravo (FIDE) in EWLA. Je clanica mednarodne akademije znanosti: Academia Europaea (Akademija Evrope) in podpredsednica Evropske akademije znanosti in umetnosti. Leta 2020 je prejela avstrijsko državno odlikovanje: Častni križ za znanost in umetnost prvega razreda."
         },
         {
           "time": "10.00",
           "title": "Dr. Polona Pičman Štefančič",
           "subtitle": "AI Act in regulativa",
           "image": "/media/2026/09/Screenshot-2026-09-29-at-18.07.48-688x1024.jpg",
-          "description": "Pravnica in ena vidnejših slovenskih strokovnjakinj za pravne, etične in upravljavske vidike umetne inteligence.\n"
+          "description": "Pravnica in ena vidnejših slovenskih strokovnjakinj za pravne, etične in upravljavske vidike umetne inteligence."
         },
         {
           "time": "",
@@ -59,21 +73,21 @@
           "title": "Boštjan Koritnik",
           "subtitle": "Predstavnik Mestne občine Ljubljana, mesta gostitelja",
           "image": "/media/2026/09/Bostjan-Koritnik-fotogafiranje-za-PF-682x1024.jpg",
-          "description": "Boštjan Koritnik je pravnik in mediator, nekdanji minister za javno upravo ter danes podžupan Mestne občine Ljubljana za področji digitalizacije in šolstva. Ob tem je raziskovalec-asistent na Pravni fakulteti Univerze v Ljubljani in generalni sekretar Zveze društev pravnikov Slovenije. Število njegovih funkcij se bliža 20, predvsem pa je človek širine in energije. Na AI WEEK-u bo povezal izkušnje iz IT-podjetja, vlade in mestne uprave ter razkril, kaj se lahko iz njih naučimo o digitalizaciji v praksi. Izvedeli bomo tudi, ali je svet, v katerem naj bi bilo več pametnih telefonov kot zobnih ščetk, zanj razlog za optimizem ali skrb.\n"
+          "description": "Boštjan Koritnik je pravnik in mediator, nekdanji minister za javno upravo ter danes podžupan Mestne občine Ljubljana za področji digitalizacije in šolstva. Ob tem je raziskovalec-asistent na Pravni fakulteti Univerze v Ljubljani in generalni sekretar Zveze društev pravnikov Slovenije. Število njegovih funkcij se bliža 20, predvsem pa je človek širine in energije. Na AI WEEK-u bo povezal izkušnje iz IT-podjetja, vlade in mestne uprave ter razkril, kaj se lahko iz njih naučimo o digitalizaciji v praksi. Izvedeli bomo tudi, ali je svet, v katerem naj bi bilo več pametnih telefonov kot zobnih ščetk, zanj razlog za optimizem ali skrb."
         },
         {
           "time": "",
           "title": "Jan Labanc",
           "subtitle": "Dunaj in njegova AI strategija",
           "image": null,
-          "description": "Strokovni sodelavec za področje IKT-tehnologije in upravljanja, Mesto Dunaj x MD-OS (Direkcija Magistrata – področje Organizacija in varnost) – oddelek za IKT-tehnologijo in upravljanje – skupina za upravljanje procesov in IKT-strategijo Jan Labanc je strokovnjak za umetno inteligenco in podatke pri Mestu Dunaj, kjer se ukvarja z upravljanjem podatkov in strategijo za IT. Pri svojem delu stremi k omogočanju odločanja na podlagi podatkov, vzpostavljanju okvirov upravljanja in spodbujanju uporabe umetne inteligence v javni upravi. Preden se je pridružil Mestu Dunaj, je deset let delal na področju tehnološkega svetovanja. Oblikovanje zaupanja vredne umetne inteligence v javnem sektorju: Dunajska pot in vizija\n\nAli zares razumemo in upravljamo podatke, na katerih temelji umetna inteligenca? Koliko nadzora je potrebnega, da zagotovimo zaupanje, odgovornost in javno korist? In zakaj toliko projektov s področja umetne inteligence nikoli ne preseže pilotne faze? Predavanje bo ponudilo vpogled v dunajski pristop k upravljanju umetne inteligence, odgovornemu uvajanju tehnologij in preoblikovanju javnega sektorja ter praktične vpoglede v to, kako lahko mesta ambicije na področju umetne inteligence pretvorijo v dolgoročne učinke.\n"
+          "description": "Strokovni sodelavec za področje IKT-tehnologije in upravljanja, Mesto Dunaj x MD-OS (Direkcija Magistrata – področje Organizacija in varnost) – oddelek za IKT-tehnologijo in upravljanje – skupina za upravljanje procesov in IKT-strategijo Jan Labanc je strokovnjak za umetno inteligenco in podatke pri Mestu Dunaj, kjer se ukvarja z upravljanjem podatkov in strategijo za IT. Pri svojem delu stremi k omogočanju odločanja na podlagi podatkov, vzpostavljanju okvirov upravljanja in spodbujanju uporabe umetne inteligence v javni upravi. Preden se je pridružil Mestu Dunaj, je deset let delal na področju tehnološkega svetovanja. Oblikovanje zaupanja vredne umetne inteligence v javnem sektorju: Dunajska pot in vizija\n\nAli zares razumemo in upravljamo podatke, na katerih temelji umetna inteligenca? Koliko nadzora je potrebnega, da zagotovimo zaupanje, odgovornost in javno korist? In zakaj toliko projektov s področja umetne inteligence nikoli ne preseže pilotne faze? Predavanje bo ponudilo vpogled v dunajski pristop k upravljanju umetne inteligence, odgovornemu uvajanju tehnologij in preoblikovanju javnega sektorja ter praktične vpoglede v to, kako lahko mesta ambicije na področju umetne inteligence pretvorijo v dolgoročne učinke."
         },
         {
           "time": "",
           "title": "Igor Žorga",
           "subtitle": "Inšpektor svetnik AKOS; preglednost in označevanje z umetno inteligenco ustvarjenih vsebin",
           "image": "/media/2026/09/AKOS-Igor-Zorga-1024x870.jpg",
-          "description": "Igor Žorga je tehnično usmerjen pravnik, ki deluje na področju umetne inteligence, in dobro razume, kaj se zgodi, ko se pravo sreča z realnostjo razvoja IT sistemov in dinamiko poslovanja – in kaj, ko je treba izpolnjevanje obveznosti komu dokazovati. Kot nekdanji vodja pravne službe v gospodarstvu razume izzive podjetij pri upravljanju tveganj na različnih področjih, danes pa se na AKOS-u v Sektorju za umetno inteligenco ukvarja z vprašanji, kako izvajati Akt o UI v praksi. Kot član mednarodne skupine nadzornih organov za umetno inteligenco in član več podskupin Odbora za umetno inteligenco pri Evropski komisiji aktivno sodeluje pri sprejemanju raznih dokumentov s področja Akta o UI, tudi z vidika nadzora obveznosti. Z nami bo delil točno tisto, kar podjetja in razvijalce ta trenutek najbolj zanima in skrbi (ali pa bi jih lahko skrbelo): Preglednost in 50. člen Akta o UI. Na AI WEEK-u bo govoril o tem, zakaj je treba kljub hitremu uvajanju interaktivnih sistemov umetne inteligence in praksam generiranja sintetičnih vsebin od 2.8.2026 pozornost nameniti tudi obveznostim Akta o UI v zvezi s preglednostjo in kako\n"
+          "description": "Igor Žorga je tehnično usmerjen pravnik, ki deluje na področju umetne inteligence, in dobro razume, kaj se zgodi, ko se pravo sreča z realnostjo razvoja IT sistemov in dinamiko poslovanja – in kaj, ko je treba izpolnjevanje obveznosti komu dokazovati. Kot nekdanji vodja pravne službe v gospodarstvu razume izzive podjetij pri upravljanju tveganj na različnih področjih, danes pa se na AKOS-u v Sektorju za umetno inteligenco ukvarja z vprašanji, kako izvajati Akt o UI v praksi. Kot član mednarodne skupine nadzornih organov za umetno inteligenco in član več podskupin Odbora za umetno inteligenco pri Evropski komisiji aktivno sodeluje pri sprejemanju raznih dokumentov s področja Akta o UI, tudi z vidika nadzora obveznosti. Z nami bo delil točno tisto, kar podjetja in razvijalce ta trenutek najbolj zanima in skrbi (ali pa bi jih lahko skrbelo): Preglednost in 50. člen Akta o UI. Na AI WEEK-u bo govoril o tem, zakaj je treba kljub hitremu uvajanju interaktivnih sistemov umetne inteligence in praksam generiranja sintetičnih vsebin od 2.8.2026 pozornost nameniti tudi obveznostim Akta o UI v zvezi s preglednostjo in kako"
         },
         {
           "time": "",
@@ -89,31 +103,31 @@
           "image": null,
           "description": ""
         }
-      ]
-    },
-    {
-      "label": "2. DAN – BUILD",
-      "description": "Poslovanje, praktična uporaba AI, marketing in rast.",
+      ],
       "locations": [
         {
           "name": "Center Rog",
           "address": "Trubarjeva cesta 72, 1000 Ljubljana"
         }
-      ],
+      ]
+    },
+    {
+      "label": "2. DAN – BUILD",
+      "description": "Poslovanje, praktična uporaba AI, marketing in rast.",
       "items": [
         {
           "time": "",
           "title": "Tomaž Valjavec, Microsoft",
           "subtitle": "109 držav. Microsoft. AI. In skoraj 20 let izkušenj tam, kjer se tehnologija dejansko spreminja v posel.",
           "image": "/media/2026/09/Tomaz-Valjavec_square-1024x1024.jpg",
-          "description": "Tomaž Valjavec pri Microsoftu vodi področje AI za regijo, ki obsega kar 109 držav. V Microsoftu deluje že skoraj 20 let, danes pa sodeluje predvsem z velikimi podjetji in javnim sektorjem pri tem, kako umetno inteligenco iz predstavitev, pilotov in navdušenja spraviti v resnične poslovne procese in merljive rezultate. Njegov teren niso samo Copiloti in novi AI tooli. Govori o tem, kar podjetja trenutno najbolj zanima: kje ima AI dejansko poslovno vrednost, kako ga uvajati v organizacije, kaj se zgodi z varnostjo in zasebnostjo ter zakaj nekateri AI projekti uspejo, drugi pa ostanejo zgolj lep demo. Izkušnje ima z bančništvom, zavarovalništvom, proizvodnjo, logistiko, energetiko in trgovino. Kaj Microsoft že vidi prihajati, česar večina podjetij še ne vidi?\n"
+          "description": "Tomaž Valjavec pri Microsoftu vodi področje AI za regijo, ki obsega kar 109 držav. V Microsoftu deluje že skoraj 20 let, danes pa sodeluje predvsem z velikimi podjetji in javnim sektorjem pri tem, kako umetno inteligenco iz predstavitev, pilotov in navdušenja spraviti v resnične poslovne procese in merljive rezultate. Njegov teren niso samo Copiloti in novi AI tooli. Govori o tem, kar podjetja trenutno najbolj zanima: kje ima AI dejansko poslovno vrednost, kako ga uvajati v organizacije, kaj se zgodi z varnostjo in zasebnostjo ter zakaj nekateri AI projekti uspejo, drugi pa ostanejo zgolj lep demo. Izkušnje ima z bančništvom, zavarovalništvom, proizvodnjo, logistiko, energetiko in trgovino. Kaj Microsoft že vidi prihajati, česar večina podjetij še ne vidi?"
         },
         {
           "time": "",
           "title": "Matjaž Možina, 2mobile",
           "subtitle": "AI vs. Human: The CX Challenge: Kdo je še v 2016 in kdo že v 2026?",
           "image": "/media/2026/09/matjaz_3-1-1024x683.jpg",
-          "description": "En klic, trije prevezani oddelki in še vedno nobenega odgovora. Lahko umetna inteligenca poskrbi za boljšo izkušnjo? Matjaž Možina iz 2Mobile bo skozi konkretne primere slovenskih podjetij pokazal, kje AI že izboljšuje podporo strankam, kje se zatakne in kdaj mora besedo prevzeti človek. Kaj loči klepetalnik, ki zna odgovoriti, od zanesljivega sistema, ki razume težavo, preveri podatke in tudi kaj uredi? AI-asistenta lahko postavi skoraj vsak. Pravi izziv je ustvariti rešitev, na katero se lahko zanese več tisoč strank. Z interaktivnim preizkusom bomo preverili, kako se AI odreže, ko vprašanja postavlja občinstvo.\n"
+          "description": "En klic, trije prevezani oddelki in še vedno nobenega odgovora. Lahko umetna inteligenca poskrbi za boljšo izkušnjo? Matjaž Možina iz 2Mobile bo skozi konkretne primere slovenskih podjetij pokazal, kje AI že izboljšuje podporo strankam, kje se zatakne in kdaj mora besedo prevzeti človek. Kaj loči klepetalnik, ki zna odgovoriti, od zanesljivega sistema, ki razume težavo, preveri podatke in tudi kaj uredi? AI-asistenta lahko postavi skoraj vsak. Pravi izziv je ustvariti rešitev, na katero se lahko zanese več tisoč strank. Z interaktivnim preizkusom bomo preverili, kako se AI odreže, ko vprašanja postavlja občinstvo."
         },
         {
           "time": "",
@@ -127,7 +141,7 @@
           "title": "Igor Verstovšek, soustanovitelj in Chief AI Officer, Cosylab",
           "subtitle": "AI Mirror: kako podjetje preslikati v AI",
           "image": "/media/2026/09/igor-verstovsek-1024x683.jpg",
-          "description": "gor Verstovšek je soustanovitelj Cosylaba, danes pa kot Chief AI Officer vodi njegovo strategijo in preobrazbo na področju umetne inteligence. Podjetje, ki ga je pomagal graditi, zdaj spoznava še skozi novo vprašanje: kako njegovo znanje, izkušnje in način dela prenesti v okolje, v katerem ljudje sodelujejo z AI-agenti? Na AI WEEK-u bo predstavil koncept AI Mirror – kako podjetje preslikati v AI. Znanje organizacije je pogosto razpršeno po dokumentih, informacijskih sistemih in glavah zaposlenih. Kako ga povezati, ohraniti in narediti dostopnega tam, kjer ga ljudje pri delu potrebujejo? In kako zagotoviti, da AI razume tudi kontekst podjetja, njegove procese in cilje? Predavanje bo povezalo skupno znanje organizacije z osebnimi in procesnimi AI-agenti ter njihovo uporabo od marketinga in prodaje do izvedbe projektov, kadrovanja in vodenja. Ob tem bo odprlo ključno vprašanje: kaj mora ostati odgovornost človeka – in kaj lahko prenesemo na AI-agenta?\n"
+          "description": "gor Verstovšek je soustanovitelj Cosylaba, danes pa kot Chief AI Officer vodi njegovo strategijo in preobrazbo na področju umetne inteligence. Podjetje, ki ga je pomagal graditi, zdaj spoznava še skozi novo vprašanje: kako njegovo znanje, izkušnje in način dela prenesti v okolje, v katerem ljudje sodelujejo z AI-agenti? Na AI WEEK-u bo predstavil koncept AI Mirror – kako podjetje preslikati v AI. Znanje organizacije je pogosto razpršeno po dokumentih, informacijskih sistemih in glavah zaposlenih. Kako ga povezati, ohraniti in narediti dostopnega tam, kjer ga ljudje pri delu potrebujejo? In kako zagotoviti, da AI razume tudi kontekst podjetja, njegove procese in cilje? Predavanje bo povezalo skupno znanje organizacije z osebnimi in procesnimi AI-agenti ter njihovo uporabo od marketinga in prodaje do izvedbe projektov, kadrovanja in vodenja. Ob tem bo odprlo ključno vprašanje: kaj mora ostati odgovornost človeka – in kaj lahko prenesemo na AI-agenta?"
         },
         {
           "time": "",
@@ -141,14 +155,14 @@
           "title": "Ken Okel",
           "subtitle": "Ameriški poslovnež, avtor in govorec",
           "image": "/media/2026/09/Ken-Okel-Headshot-3-975x1024.jpg",
-          "description": "PRVIČ IZ ZDA V LJUBLJANO: Kaj imajo skupnega televizijske novice, odpravljanje posledic uničujočih orkanov, profesionalni balet, vodenje podjetij in umetna inteligenca? Kena Okla. Ameriški keynote govorec, avtor in strokovnjak za leadership ter performance Ken Okel ima vse prej kot običajno kariero. Več kot desetletje je delal kot televizijski voditelj in novinar, kjer se je naučil sprejemati odločitve pod pritiskom. Po velikih orkanih je vodil humanitarne operacije, nato pa poslovanje profesionalne baletne organizacije. Danes svoje izkušnje z odrov prenaša na vodje in organizacije, ki morajo uspevati v svetu, kjer se pravila spreminjajo hitreje kot kadarkoli prej. Je avtor knjig Stuck on Yellow in Get Better!, ustvarjalec podcasta The 2 Minute Takeaway ter govorec, ki kompleksne poslovne izzive spreminja v konkretne, zapomnljive in – kar je redkost – zabavne rešitve. .. In potem je prišel AI. Okel se umetne inteligence loteva z vidika, ki ga danes potrebuje skoraj vsak vodja: če postaja tehnologija vse pametnejša, kako poskrbeti, da bomo mi postajali boljši? Njegovo sporočilo ni, da moramo vsi postati AI-strokovnjaki. Nasprotno. V ospredje postavlja tisto, česar tehnologija ne more preprosto nadomestiti: presojo, komunikacijo, zaupanje, prilagodljivost, vodenje in sposobnost delovanja pod pritiskom. Kako ostati relevanten, ko AI spreminja delovna mesta? Kako voditi ljudi skozi negotovost? Kako izkoristiti tehnologijo, ne da bi izgubili človeško prednost? In predvsem: kako v času velikih sprememb ne zgolj preživeti, ampak poslovno uspeti? Ameriška perspektiva. Nenavadna kariera. Veliko poslovnih lekcij. AI. In govorec, kakršnega na slovenskih odrih še nismo gostili.\n"
+          "description": "PRVIČ IZ ZDA V LJUBLJANO: Kaj imajo skupnega televizijske novice, odpravljanje posledic uničujočih orkanov, profesionalni balet, vodenje podjetij in umetna inteligenca? Kena Okla. Ameriški keynote govorec, avtor in strokovnjak za leadership ter performance Ken Okel ima vse prej kot običajno kariero. Več kot desetletje je delal kot televizijski voditelj in novinar, kjer se je naučil sprejemati odločitve pod pritiskom. Po velikih orkanih je vodil humanitarne operacije, nato pa poslovanje profesionalne baletne organizacije. Danes svoje izkušnje z odrov prenaša na vodje in organizacije, ki morajo uspevati v svetu, kjer se pravila spreminjajo hitreje kot kadarkoli prej. Je avtor knjig Stuck on Yellow in Get Better!, ustvarjalec podcasta The 2 Minute Takeaway ter govorec, ki kompleksne poslovne izzive spreminja v konkretne, zapomnljive in – kar je redkost – zabavne rešitve. .. In potem je prišel AI. Okel se umetne inteligence loteva z vidika, ki ga danes potrebuje skoraj vsak vodja: če postaja tehnologija vse pametnejša, kako poskrbeti, da bomo mi postajali boljši? Njegovo sporočilo ni, da moramo vsi postati AI-strokovnjaki. Nasprotno. V ospredje postavlja tisto, česar tehnologija ne more preprosto nadomestiti: presojo, komunikacijo, zaupanje, prilagodljivost, vodenje in sposobnost delovanja pod pritiskom. Kako ostati relevanten, ko AI spreminja delovna mesta? Kako voditi ljudi skozi negotovost? Kako izkoristiti tehnologijo, ne da bi izgubili človeško prednost? In predvsem: kako v času velikih sprememb ne zgolj preživeti, ampak poslovno uspeti? Ameriška perspektiva. Nenavadna kariera. Veliko poslovnih lekcij. AI. In govorec, kakršnega na slovenskih odrih še nismo gostili."
         },
         {
           "time": "",
           "title": "Primož Inkret in Greg Evseev; Prosecco 37",
           "subtitle": "\"AI-nonimnost? Da prosim!\", dialog med CEO in CISO podjetja",
           "image": "/media/2026/09/Primoz-in-Greg-1024x1024.jpg",
-          "description": "CEO želi izkoristiti vso moč umetne inteligence. CISO želi preprečiti, da bi osebni in zaupni podatki pristali tam, kjer ne bi smeli. Kdo ima prav? Predavanje bo potekalo kot živahen dialog dveh članov vodstva. CEO bo zagovarjal hitrost, priložnosti in uporabo LLM-jev, CISO pa varnost, odgovornost in zasebnost. Brez dolgih predstavitev – skozi vprašanja, nasprotovanja, konkretne primere in tudi nekaj bež humorja. V središču pogovora bo Anonymizator, orodje, katerega pobudnik in lastnik je Prosecco 37. Deluje kot zaščitna plast nad vsemi LLM-ji: občutljive in osebne podatke zaščiti, še preden vsebina doseže izbrani jezikovni model. Tako organizacijam ni treba izbirati med varnostjo in močjo umetne inteligence. ”Vsakdo bi moral imeti možnost uporabljati najnaprednejšo tehnologijo na svetu, ne glede na to, od kod prihaja, medtem ko občutljivi podatki ostanejo pri viru.” CEO in CISO bosta soočila ključna vprašanja: Ali je prepoved uporabe LLM-jev znotraj podjetij realna rešitev? Kaj se dogaja s podatki, ki jih vnašamo v umetno inteligenco? Kako zaposlenim omogočiti varno uporabo vseh LLM-jev? Kdo odgovarja, ko občutljivi podatki zapustijo organizacijo? Kako Anonymizator odstrani ovire med varnostjo in inovacijami? Pričakujte zanimiv dvoboj argumentov, praktične dileme in trenutke, ko bo imel prav CEO ... vse dokler CISO ne postavi naslednjega vprašanja.\n"
+          "description": "CEO želi izkoristiti vso moč umetne inteligence. CISO želi preprečiti, da bi osebni in zaupni podatki pristali tam, kjer ne bi smeli. Kdo ima prav? Predavanje bo potekalo kot živahen dialog dveh članov vodstva. CEO bo zagovarjal hitrost, priložnosti in uporabo LLM-jev, CISO pa varnost, odgovornost in zasebnost. Brez dolgih predstavitev – skozi vprašanja, nasprotovanja, konkretne primere in tudi nekaj bež humorja. V središču pogovora bo Anonymizator, orodje, katerega pobudnik in lastnik je Prosecco 37. Deluje kot zaščitna plast nad vsemi LLM-ji: občutljive in osebne podatke zaščiti, še preden vsebina doseže izbrani jezikovni model. Tako organizacijam ni treba izbirati med varnostjo in močjo umetne inteligence. ”Vsakdo bi moral imeti možnost uporabljati najnaprednejšo tehnologijo na svetu, ne glede na to, od kod prihaja, medtem ko občutljivi podatki ostanejo pri viru.” CEO in CISO bosta soočila ključna vprašanja: Ali je prepoved uporabe LLM-jev znotraj podjetij realna rešitev? Kaj se dogaja s podatki, ki jih vnašamo v umetno inteligenco? Kako zaposlenim omogočiti varno uporabo vseh LLM-jev? Kdo odgovarja, ko občutljivi podatki zapustijo organizacijo? Kako Anonymizator odstrani ovire med varnostjo in inovacijami? Pričakujte zanimiv dvoboj argumentov, praktične dileme in trenutke, ko bo imel prav CEO ... vse dokler CISO ne postavi naslednjega vprašanja."
         },
         {
           "time": "",
@@ -190,38 +204,26 @@
           "title": "Andrej Bergant in Gorazd Zakajšek, Kinetara AI",
           "subtitle": "AI voice agent, ki prevzame tvoje klice",
           "image": "/media/2026/09/KINETARA-1-1024x1024.jpg",
-          "description": "Kinetara.ai je glasovni AI agent, ki v manj kot treh sekundah sprejme vsak vhodni klic, ki ga podjetje ne uspe; zunaj delovnega časa, ob prometnih konicah, med sestanki ali ob kadrovskih vrzelih. Namesto telefonskega odzivnika ali IVR menija se s klicateljem naravno pogovarja v slovenščini (in še osmih jezikih), iz pogovora izlušči strukturirane podatke, jih skupaj s posnetkom in transkriptom zapiše v CRM ter obvesti odgovorno osebo. Zgrajena je na realtime glasovnih modelih z neposrednim SIP priklopom na obstoječo telefonijo podjetja, agenti pa se konfigurirajo brez razvoja – vključno s prevzemi in prevezavami na človeka. Zakaj je rešitev posebna? Slovenščina na ravni tekočega pogovora, in to je za naš tg velika posebnost. Kinetara.AI tudi kliče, preverja podatke, ustvarja zapise v CRM in tikete ter prevezuje na človeka, ko je to potrebno. Zasnovana skladno z GDPR in AI Act, s hrambo posnetkov in transkriptov pod nadzorom naročnika.\n"
+          "description": "Kinetara.ai je glasovni AI agent, ki v manj kot treh sekundah sprejme vsak vhodni klic, ki ga podjetje ne uspe; zunaj delovnega časa, ob prometnih konicah, med sestanki ali ob kadrovskih vrzelih. Namesto telefonskega odzivnika ali IVR menija se s klicateljem naravno pogovarja v slovenščini (in še osmih jezikih), iz pogovora izlušči strukturirane podatke, jih skupaj s posnetkom in transkriptom zapiše v CRM ter obvesti odgovorno osebo. Zgrajena je na realtime glasovnih modelih z neposrednim SIP priklopom na obstoječo telefonijo podjetja, agenti pa se konfigurirajo brez razvoja – vključno s prevzemi in prevezavami na človeka. Zakaj je rešitev posebna? Slovenščina na ravni tekočega pogovora, in to je za naš tg velika posebnost. Kinetara.AI tudi kliče, preverja podatke, ustvarja zapise v CRM in tikete ter prevezuje na človeka, ko je to potrebno. Zasnovana skladno z GDPR in AI Act, s hrambo posnetkov in transkriptov pod nadzorom naročnika."
+        }
+      ],
+      "locations": [
+        {
+          "name": "Center Rog",
+          "address": "Trubarjeva cesta 72, 1000 Ljubljana"
         }
       ]
     },
     {
       "label": "3. DAN – EXPERIENCE",
       "description": "Praktične izkušnje, predstavitve in srečanja.",
-      "locations": [
-        {
-          "name": "Mestna občina Ljubljana",
-          "address": "Stritarjeva ulica 2, 1000 Ljubljana"
-        },
-        {
-          "name": "Tehnološki park – AI HUB",
-          "address": "Tehnološki park 19, 1000 Ljubljana"
-        },
-        {
-          "name": "Grlica Law",
-          "address": "Miklošičeva cesta 18, 1000 Ljubljana"
-        },
-        {
-          "name": "Prosecco 37",
-          "address": "Igriška ulica 5, 1000 Ljubljana"
-        }
-      ],
       "items": [
         {
           "time": "10.00",
           "title": "Mestna občina Ljubljana",
           "subtitle": "AI BRUNCH ob predstavitvi Supermesta Ljubljana",
           "image": null,
-          "description": "Na AI BRUNCH v Supermesto prihodnosti: Tretji dan AI WEEK-a, 5. novembra, nas bo Mestna občina Ljubljana povabila na AI BRUNCH in predstavitev vizije Supermesto Ljubljana 2045. Ob druženju bomo pogledali, kako si mesto gostiteljica zamišlja svojo prihodnost: od bolj povezanih sosesk in dostopnih storitev do zelenih površin ter novih rešitev za boljše vsakdanje življenje. Kako pametno mesto občutimo njegovi prebivalci? Kje nam lahko AI prihrani čas, olajša opravke in izboljša mestne storitve? In kaj mora mesto prihodnosti ponuditi, da si bomo v njem želeli živeti? To bodo izhodišča za sproščen pogovor ob brunchu, ki bo povezal tehnologijo, razvoj Ljubljane in ljudi, ki jo soustvarjamo.\n"
+          "description": "Na AI BRUNCH v Supermesto prihodnosti: Tretji dan AI WEEK-a, 5. novembra, nas bo Mestna občina Ljubljana povabila na AI BRUNCH in predstavitev vizije Supermesto Ljubljana 2045. Ob druženju bomo pogledali, kako si mesto gostiteljica zamišlja svojo prihodnost: od bolj povezanih sosesk in dostopnih storitev do zelenih površin ter novih rešitev za boljše vsakdanje življenje. Kako pametno mesto občutimo njegovi prebivalci? Kje nam lahko AI prihrani čas, olajša opravke in izboljša mestne storitve? In kaj mora mesto prihodnosti ponuditi, da si bomo v njem želeli živeti? To bodo izhodišča za sproščen pogovor ob brunchu, ki bo povezal tehnologijo, razvoj Ljubljane in ljudi, ki jo soustvarjamo."
         },
         {
           "time": "",
@@ -251,6 +253,24 @@
           "image": null,
           "description": ""
         }
+      ],
+      "locations": [
+        {
+          "name": "Mestna občina Ljubljana",
+          "address": "Stritarjeva ulica 2, 1000 Ljubljana"
+        },
+        {
+          "name": "Tehnološki park – AI HUB",
+          "address": "Tehnološki park 19, 1000 Ljubljana"
+        },
+        {
+          "name": "Grlica Law",
+          "address": "Miklošičeva cesta 18, 1000 Ljubljana"
+        },
+        {
+          "name": "Prosecco 37",
+          "address": "Igriška ulica 5, 1000 Ljubljana"
+        }
       ]
     }
   ],
@@ -261,25 +281,5 @@
     "members_free": false,
     "nonmember_price": ""
   },
-  "draft": false,
-  "themes_title": "Think. Build. Experience.",
-  "themes": [
-    {
-      "title": "DAY 1: THINK",
-      "text": "Vizija, Strategija, regulativa, politika, država, prihodnost, raziskave, univerze, etika, zakonodaja, javni sektor, evropske smernice, digitalizacija."
-    },
-    {
-      "title": "DAY 2: BUILD",
-      "text": "Business, start-up, podjetja, produkti, rast, ROI, avtomatizacija, startupi, investicije, marketing, prodaja, HR, IT, produktivnost, inovacije, implementacija."
-    },
-    {
-      "title": "DAY 3: EXPERIENCE",
-      "text": "Demo, showcase, open house, laboratoriji, podjetja, izkušnje, networking, obisk lokacij, AI na terenu, ekskurzijA, delavnice, prototipi."
-    },
-    {
-      "title": "NIGHT 3: CELEBRATION",
-      "text": "Podelitev nagrad, predstavitev novega strokovnega sveta, zaključni govor, AI skupnost, povezovanje, slavnostni večer, glasba, praznovanje."
-    }
-  ],
-  "themes_note": "*Tretji dan konference je brezplačen."
+  "draft": false
 }
