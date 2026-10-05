@@ -71,11 +71,11 @@ collections:
         required: false
         hint: Ena oznaka na vrstico, npr. AI, Slovenija.
 
-  # ------------------------------------------------------------ DOGODKI
+  # ------------------------------------------------------------ PRIHAJAJOČI DOGODKI
   - name: dogodki
-    label: Dogodki
+    label: Prihajajoči dogodki
     label_singular: dogodek
-    description: Vsi dogodki s programom in prijavo – prihajajoči in pretekli. Ko dogodek mine, ga spletna stran sama prikaže med preteklimi dogodki; tukaj ostane, da lahko še vedno popravite njegov opis.
+    description: Dogodki, ki še niso minili. Ko dogodek mine, se ponoči sam premakne med »Pretekli dogodki«; spletni naslov dogodka ostane enak.
     folder: content/dogodki
     format: json
     create: true
@@ -163,31 +163,97 @@ collections:
           - { name: nonmember_price, label: Cena za nečlane, widget: string, required: false, hint: "npr. 120 € + DDV" }
       - { name: draft, label: Osnutek (ni prikazano na strani), widget: boolean, default: false, required: false }
 
-  # ------------------------------------------------------------ PRETEKLI DOGODKI (ARHIV)
-  - name: arhiv
-    label: Pretekli dogodki (arhiv)
+  # ------------------------------------------------------------ PRETEKLI DOGODKI
+  - name: pretekli
+    label: Pretekli dogodki
     label_singular: pretekli dogodek
-    description: Zapisi o starejših dogodkih z besedilom in fotografijami.
-    folder: content/arhiv
+    description: Dogodki, ki so že minili (sem se premaknejo sami), in starejši zapisi o dogodkih. Tudi tukaj lahko popravite opis ali dodate fotografije.
+    folder: content/dogodki-pretekli
     format: json
     create: true
     delete: true
     slug: "{{title}}"
     identifier_field: title
-    summary: "{{title}}"
-    sortable_fields: [date, title]
-    preview_path: "dogodki/{{slug}}/"
+    summary: "{{start | date('D. M. YYYY')}} · {{title}}"
+    sortable_fields: [start, title]
+    preview_path: "dogodek/{{slug}}/"
     thumbnail: image
     fields:
       - { name: title, label: Naslov, widget: string }
-      - { name: date, label: Datum dogodka, widget: datetime, format: "YYYY-MM-DD", time_format: false }
-      - { name: image, label: Naslovna slika, widget: image, required: false, choose_url: false }
+      - { name: eyebrow, label: Oznaka nad naslovom, widget: string, default: Dogodek, required: false, hint: "npr. Dogodek, Delavnica, Konferenca" }
+      - { name: start, label: Začetek, widget: datetime, format: "YYYY-MM-DDTHH:mm" }
+      - { name: end, label: Konec, widget: datetime, format: "YYYY-MM-DDTHH:mm", required: false, hint: Pri enodnevnem dogodku vpišite uro konca istega dne. }
+      - { name: location, label: Lokacija, widget: string, required: false, hint: "npr. Center Rog, Ljubljana" }
+      - { name: price, label: Cena, widget: string, required: false, hint: "npr. 499 € + DDV ali Člani Zavoda AI-D: brezplačno; ostali: 120 € + DDV" }
+      - { name: lead, label: Kratek uvod, widget: text, required: false, hint: Ena poved pod naslovom na vrhu strani dogodka. }
+      - { name: image, label: Naslovna slika, widget: image, choose_url: false }
       - name: body
-        label: Besedilo
+        label: Opis dogodka
         widget: richtext
+        required: false
         buttons: [bold, italic, link, heading-two, heading-three, bulleted-list, numbered-list, quote]
         editor_components: [image]
-      - { name: draft, label: Skrito (ni prikazano na strani), widget: boolean, default: false, required: false }
+      - name: themes_title
+        label: Tematski sklopi – naslov
+        widget: string
+        required: false
+        hint: Neobvezno. Npr. »Think. Build. Experience.«
+      - name: themes
+        label: Tematski sklopi
+        label_singular: sklop
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.title}}"
+        fields:
+          - { name: title, label: Naslov, widget: string }
+          - { name: text, label: Opis, widget: text, required: false }
+      - { name: themes_note, label: Opomba pod sklopi, widget: string, required: false }
+      - name: program
+        label: Program
+        label_singular: dan
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        hint: Neobvezno. Program se na strani prikaže po dnevih; ob kliku na predavatelja se odpre njegov opis.
+        fields:
+          - { name: label, label: Ime dneva, widget: string, hint: "npr. DAN 1: THINK" }
+          - { name: description, label: Kratek opis dneva, widget: string, required: false }
+          - name: items
+            label: Točke programa
+            label_singular: točko
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.time}} {{fields.title}}"
+            fields:
+              - { name: time, label: Ura, widget: string, required: false, hint: "npr. 09.30" }
+              - { name: title, label: Predavatelj ali naslov točke, widget: string }
+              - { name: subtitle, label: "Podnaslov (vloga, organizacija ali tema)", widget: string, required: false }
+              - { name: image, label: Fotografija, widget: image, required: false, choose_url: false }
+              - { name: description, label: Opis (odpre se ob kliku), widget: richtext, required: false, minimal: true, buttons: [bold, italic, link, bulleted-list], editor_components: [] }
+          - name: locations
+            label: Lokacije tega dne (za zemljevid)
+            label_singular: lokacijo
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Ime lokacije, widget: string }
+              - { name: address, label: Naslov, widget: string }
+      - name: registration
+        label: Prijave
+        widget: object
+        collapsed: false
+        fields:
+          - { name: open, label: Na strani prikaži obrazec za prijavo, widget: boolean, default: true }
+          - { name: title, label: Naslov obrazca, widget: string, default: Prijava na dogodek, required: false }
+          - { name: intro, label: Besedilo nad obrazcem, widget: string, default: "Izpolnite obrazec. Potrdilo o prijavi boste prejeli po e-pošti.", required: false }
+          - { name: members_free, label: "Člani zavoda brezplačno (obrazec ima stikalo »Sem član«)", widget: boolean, default: false, required: false }
+          - { name: nonmember_price, label: Cena za nečlane, widget: string, required: false, hint: "npr. 120 € + DDV" }
+      - { name: draft, label: Osnutek (ni prikazano na strani), widget: boolean, default: false, required: false }
 
   # ------------------------------------------------------------ STRANI (stalna zgradba, urejajo se besedila)
   - name: strani

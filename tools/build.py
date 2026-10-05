@@ -329,10 +329,19 @@ def load_articles():
     return out
 
 
+# older event write-ups taken over from the WordPress site: shown as simple pages at dogodki/<slug>/
+LEGACY_EVENTS = set(json.load(open(os.path.join(ROOT, "tools", "stari-dogodki.json"), encoding="utf-8")))
+
+
+def event_files():
+    """Upcoming events (content/dogodki) and past ones (content/dogodki-pretekli, moved there automatically)."""
+    return entries("dogodki") + entries("dogodki-pretekli")
+
+
 def load_events():
     out = []
-    for slug, ev in entries("dogodki"):
-        if ev.get("draft"):
+    for slug, ev in event_files():
+        if ev.get("draft") or slug in LEGACY_EVENTS:
             continue
         start = local_dt(ev.get("start"))
         end = local_dt(ev.get("end")) or start
@@ -367,11 +376,11 @@ def load_events():
 
 def load_archive():
     out = []
-    for slug, x in entries("arhiv"):
-        if x.get("draft"):
+    for slug, x in event_files():
+        if x.get("draft") or slug not in LEGACY_EVENTS:
             continue
         out.append({"slug": "dogodki/" + slug, "title": x.get("title", slug), "image": image_key(x.get("image")),
-                    "html": md_html(x.get("body")), "event_date": (x.get("date") or "")[:10] or None})
+                    "html": md_html(x.get("body")), "event_date": (x.get("start") or "")[:10] or None})
     return out
 
 
@@ -1484,6 +1493,8 @@ def build_redirects():
     for old in json.load(open(os.path.join(ROOT, "tools", "stare-povezave.json"), encoding="utf-8")):
         write_redirect(old, "novice/")
     write_redirect("politika-zasebnosti.html/", "politika-zasebnosti/")
+    for x in PAST:
+        write_redirect("dogodek/" + x["slug"].split("/", 1)[1] + "/", x["url"])
 
 
 def main():
