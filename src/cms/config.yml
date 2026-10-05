@@ -75,14 +75,14 @@ collections:
   - name: dogodki
     label: Dogodki
     label_singular: dogodek
-    description: Prihajajoči dogodki s programom in prijavo. Po koncu dogodka se dogodek sam premakne med pretekle.
+    description: Vsi dogodki s programom in prijavo – prihajajoči in pretekli. Ko dogodek mine, ga spletna stran sama prikaže med preteklimi dogodki; tukaj ostane, da lahko še vedno popravite njegov opis.
     folder: content/dogodki
     format: json
     create: true
     delete: true
     slug: "{{title}}"
     identifier_field: title
-    summary: "{{title}} – {{start | date('D. M. YYYY')}}"
+    summary: "{{start | date('D. M. YYYY')}} · {{title}}"
     sortable_fields: [start, title]
     preview_path: "dogodek/{{slug}}/"
     thumbnail: image
