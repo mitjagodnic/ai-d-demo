@@ -920,7 +920,7 @@ def build_articles():
 
 def build_events_index():
     def body(p):
-        ordered = sorted(UPCOMING, key=lambda ev: (ev is not AIWEEK, ev["start"]))
+        ordered = sorted(UPCOMING, key=lambda ev: ev["start"])  # chronological: the soonest event first
         up = "".join(event_card(p, ev, big=True) for ev in ordered)
         past = [{"url": ev["url"], "image": ev["image"], "title": ev["title"], "d": ev["start"]} for ev in FINISHED] + ARCHIVE
         arch = "".join(archive_card(p, x) for x in past)

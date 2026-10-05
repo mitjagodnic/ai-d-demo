@@ -47,7 +47,9 @@ collections:
     slug: "{{title}}"
     identifier_field: title
     summary: "{{title}}"
-    sortable_fields: [date, title]
+    sortable_fields:
+      fields: [date, title]
+      default: { field: date, direction: descending }
     preview_path: "{{slug}}/"
     thumbnail: image
     fields:
@@ -83,7 +85,9 @@ collections:
     slug: "{{title}}"
     identifier_field: title
     summary: "{{start | date('D. M. YYYY')}} · {{title}}"
-    sortable_fields: [start, title]
+    sortable_fields:
+      fields: [start, title]
+      default: { field: start, direction: ascending }
     preview_path: "dogodek/{{slug}}/"
     thumbnail: image
     fields:
@@ -175,7 +179,9 @@ collections:
     slug: "{{title}}"
     identifier_field: title
     summary: "{{start | date('D. M. YYYY')}} · {{title}}"
-    sortable_fields: [start, title]
+    sortable_fields:
+      fields: [start, title]
+      default: { field: start, direction: descending }
     preview_path: "dogodek/{{slug}}/"
     thumbnail: image
     fields:
